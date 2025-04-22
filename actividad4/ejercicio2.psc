@@ -1,42 +1,31 @@
 Algoritmo ejercicio2
-	definir dia, mes, año Como Entero
-	definir dia_act, mes_act, año_act como Entero
-	dia_act = 22
-	mes_act = 4
-	año_act = 2025
-	
-	leer dia
-	leer mes
-	leer año
-	
-	definir dias_transc, mes_transc, año_trasnc Como Entero
-	
-	definir suma_dias Como Entero
-	
-	año_transc = año_act - año
-	mes_transc = mes_act - mes
-	dias_transc = dia_act - dia
-	
-	si año_transc > 0 Entonces
-		suma_dias = 365 * año_transc
+	Definir dia, mes, ANO Como Entero
+	Definir dia_act, mes_act, ANO_ACT Como Entero
+	dia_act <- 22
+	mes_act <- 4
+	ANO_ACT <- 2025
+	Leer dia
+	Leer mes
+	Leer ANO
+	Definir dias_transc, mes_transc, ANO_TRASNC Como Entero
+	Definir suma_dias Como Entero
+	ANO_TRANSC <- ANO_ACT-ANO
+	mes_transc <- mes_act-mes
+	dias_transc <- dia_act-dia
+	Si ANO_TRANSC>0 Entonces
+		suma_dias <- 365*ANO_TRANSC
 	FinSi
-	
-	si mes_transc > 0 Entonces
-		suma_dias = suma_dias + (30*mes_transc)
+	Si mes_transc>0 Entonces
+		suma_dias <- suma_dias+(30*mes_transc)
 	FinSi
-	
-	si dias_transc > 0 Entonces
-		suma_dias = suma_dias + dias_transc
+	Si dias_transc>0 Entonces
+		suma_dias <- suma_dias+dias_transc
 	FinSi
-	
-	escribir dias_transc
-	escribir mes_transc
-	escribir año_transc
-	
-	escribir suma_dias
-	
-	si suma_dias <= 30 Entonces
-		escribir "Cuenta inactiva"
+	Escribir dias_transc
+	Escribir mes_transc
+	Escribir ANO_TRANSC
+	Escribir suma_dias
+	Si suma_dias<=30 Entonces
+		Escribir 'Cuenta inactiva'
 	FinSi
-	
 FinAlgoritmo
