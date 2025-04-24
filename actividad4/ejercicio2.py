@@ -6,7 +6,7 @@ fecha_actual = dt.datetime.now()
 dias = (fecha_actual - fecha_ingreso).days
 print(fecha_actual)
 print(fecha_ingreso)
-print("dias ", dias)
+print(f"La cuenta lleva {dias} días inactiva")
 
 if dias > 30:
     print("Cuenta inactiva")
